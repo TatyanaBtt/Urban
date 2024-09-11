@@ -1,0 +1,21 @@
+my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
+index = 0
+while index < len(my_list):
+    num = my_list[index]
+    if num > 0:
+        print(num)
+    index += 1
+    if num < 0:
+        break
+
+my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
+my_list_positive = []
+index = 0
+while index < len(my_list):
+    num = my_list[index]
+    if num > 0:
+        my_list_positive.append(num)
+    index += 1
+    if num < 0:
+        break
+print(my_list_positive)
